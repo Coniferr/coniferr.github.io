@@ -1,0 +1,121 @@
+/*Values*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+	--brand: #FF649B;
+	--lego: #89A495;
+	--fur: #E7E5D8;
+	--white: #FFF;
+	--black: #1B191A;
+	--font: "Roboto";
+}
+
+/*More Values*/
+
+*,  *::after, *::before {
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	background: var(--black);
+	color: var(--white);
+	font-family: var(--font);
+	min-width: 100%;
+	place-items: center;
+	display: grid;\
+}
+
+a, abbr, acronym, address, applet, big, blockquote, body, button, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, input, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/*Buttons*/
+/*================*/
+
+#WhiteButton, #LegoButton {
+	background: var(--brand);
+	color: var(--white);
+	padding: 10px 35px;
+	border-radius: 100px;
+	margin-right: 10px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#LegoButton {
+	background-color: var(--lego);
+	color: var(--fur);
+}
+
+#WhiteButton:hover,
+#LegoButton:hover {
+	
+}
+
+/*Right Side*/
+/*================*/
+
+#AboutMe {
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (max-width: 65em) {
+	#AboutMe {
+		flex-direction: column;
+	}
+}
+
+#AboutArea {
+	font-size: 1.8rem;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+}
+
+#NameArea {
+	font-size: 48px;
+	font-weight: Bold;
+	padding-bottom: 10px;
+	color: var(--brand);
+}
+
+#InfoArea {
+	height: 100%;
+}
+
+/*Left Side*/
+/*================*/
+
+#Photo {
+	height: 18em;
+	width: auto;
+	border-radius: 500px;
+	margin-right: 30px;
+}
+
+@media screen and (max-width: 65em) {
+	#Photo {
+		height: auto;
+		width: 60%;
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+}
+
+#PhotoArea {
+	border-radius: 100px;
+}
