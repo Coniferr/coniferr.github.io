@@ -1,10 +1,12 @@
 /*Values
 =============*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 
 :root {
 	--brand: #FF649B;
+	--twitch: linear-gradient(90deg, rgba(105,78,168,1) 10%, rgba(255,100,155,1) 35%);;
 	--lego: #89A495;
 	--fur: #E7E5D8;
 	--white: #FFF;
@@ -26,7 +28,7 @@ body, html {
 body {
 	background: var(--black);
 	color: var(--white);
-	font-family: 'Poppins';
+	font-family: "Mada";
 	min-width: 100%;
 	place-items: center;
 	display: grid;
@@ -47,55 +49,69 @@ a, abbr, acronym, address, applet, big, blockquote, body, button, caption, cite,
 =============*/
 
 #WhiteButton, #LegoButton {
-	background: transparent;
+	background: var(--brand);
 	color: var(--white);
 	padding: 10px 35px;
-	border: var(--brand) 2px solid;
 	border-radius: 50px;
 	margin-right: 10px;
 	cursor: pointer;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: bold;
-	transition: background-color 0.3s ease-in-out;
 }
 
 #LegoButton {
 	background-color: var(--lego);
-	color: var(--fur);
-	border-color: transparent;
-}
-
-#WhiteButton:hover {
-	background-color: var(--brand);
 }
 
 /*Right Side
 =============*/
 
-#AboutMe {
+#AboutMe, #Showcase {
 	display: flex;
 	align-items: center;
 }
 
 @media screen and (max-width: 65em) {
-	#AboutMe {
+	#AboutMe, #Showcase {
 		flex-direction: column;
+		width: 100%;
 	}
 }
 
+#Showcase {
+	margin-bottom: 50px;
+}
+
 #AboutArea {
-	font-size: 1.8rem;
+	font-size: 28px;
 	display: flex;
 	flex-direction: column;
 	padding-bottom: 20px;
 }
 
-#NameArea, #ShowName {
+
+#NameArea, #TwitchName {
 	font-size: 64px;
-	font-weight: 800;
+	font-weight: 1000 !important;
 	color: var(--brand);
 }
+
+
+
+/*
+#TwitchName {
+background: rgb(144,89,246);
+background: var(--twitch);
+    /* background-image: url(https://images.unsplash.com/photo-1579547945478-a6681fb3c3c9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjF9);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+*/
+
+
 
 #InfoArea {
 	height: 100%;
@@ -104,17 +120,22 @@ a, abbr, acronym, address, applet, big, blockquote, body, button, caption, cite,
 /*Left Side
 =============*/
 
-#Photo {
+#Photo, #PhotoShow {
 	height: 20em;
 	width: auto;
 	border-radius: 500px;
 	margin-right: 30px;
 }
 
+#PhotoShow {
+	border-radius: 0px;
+	height: 25em;
+}
+
 @media screen and (max-width: 65em) {
-	#Photo {
+	#Photo, #PhotoShow {
 		height: auto;
-		width: 60%;
+		width: 100%;
 		margin-right: 0px;
 		margin-bottom: 30px;
 	}
