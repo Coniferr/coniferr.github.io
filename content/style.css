@@ -1,15 +1,16 @@
 
 /*Font*/
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&display=swap');
 
 /*Body*/
 
 Body {
     margin: 0;
-    background-color:#488282;
-    font-family: "Open Sans";
-    -webkit-font-smoothing: none !important;
+    background-color: Teal;
+    color: black;
+    font-family: "Archivo";
+    text-rendering: optimizeLegibility;
 }
 
 .Wrapper {
@@ -51,18 +52,30 @@ Body {
     }
 }
 
+header#Section {
+    padding: 8px 10px;
+    margin: 35px auto;
+}
+
+h3#Title {
+    font-size: 72px;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+h3#HeadText {
+    font-size: 42px;
+    margin: 0px;
+}
+
 /*About*/
 
 .AboutMe {
     display: flex;
     flex-direction: column;
-}
-
-span#Title {
-    font-size: 62px;
-    margin-bottom: 12px;
-    font-style: italic;
-    font-weight: 600;
 }
 
 span#Sexuality {
@@ -80,53 +93,59 @@ Footer {
 /*Buttons*/
 
 .Button {
-    border-radius: 0px;
+    background-color: #9258B1;
+    border: 2px solid black;
+    font-size: 22px;
+    font-weight: 600;
+    display: inline-block;
+    width: 150px;
     transition: linear;
     transition-property: transform, box-shadow;
     transition-duration: 30ms;
-    box-shadow: inset -5px -5px 0px 0px rgba(0, 0, 0, 0.30), inset 5px 5px 0px 0px #ffffff31, 0px 5px 0px 0px rgba(0, 0, 0, 0.30);
+    color: white;
+    line-height: 38px;
+    text-decoration: none;
+    margin-top: 20px;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.30);
 }
 
 .Button:hover {
-    transform: translateY(-5px);
-    box-shadow: inset -5px -5px 0px 0px rgba(0, 0, 0, 0.30), inset 5px 5px 0px 0px #ffffff31, 0px 10px 0px 0px rgba(0, 0, 0, 0.30);
+    transform: translate(0,-4px);
+    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.30);
 }
 
-a#Twitter {
-    background-color: #1d9bf0;
-    font-size: 22px;
-    font-weight: 800;
-    width: 150px;
-    line-height: 42px;
-    text-decoration: none;
-    border: 3px solid black;
-    color: black;
-    display: inline-block;
-    margin-top: 15px;
+.Button:active {
+    transform: translateY(0px);
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.30);
 }
 
-a#Tumblr {
-    background-color:#35465D;
-    font-size: 22px;
-    font-weight: 800;
-    width: 150px;
-    line-height: 42px;
-    text-decoration: none;
-    border: 3px solid black;
-    color: white;
-    display: inline-block;
-    margin-top: 20px;
+/*Article*/
+
+article {
+    background-color: white;
+    border: 2px solid black;
+    margin: 35px auto;
+    margin-bottom: 0px;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.30);
+    width: 70%;
+    transition: linear;
+    transition-property: transform, box-shadow;
+    transition-duration: 30ms;
 }
 
-a#FM {
-    background-color:#d92323;
-    font-size: 22px;
-    font-weight: 800;
-    width: 150px;
-    line-height: 42px;
-    text-decoration: none;
-    border: 3px solid black;
-    color: white;
-    display: inline-block;
-    margin-top: 20px;
+article:hover {
+    transform: translate(0,-4px);
+    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.30);
 }
+
+article:active {
+    transform: translateY(0px);
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.30);
+}
+
+.Screenshot {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
