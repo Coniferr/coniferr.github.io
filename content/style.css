@@ -1,28 +1,26 @@
-
-/*Font*/
-
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600;800&display=swap');
 
 /*Body*/
 
 Body {
+    background-color: #2F383F;
     margin: 0;
-    background-color: Teal;
-    color: black;
-    font-family: "Archivo";
+    color: #F2F2F2;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
     text-rendering: optimizeLegibility;
 }
 
 .Wrapper {
     width: 40%;
-    margin: 0 auto;
+    margin: 40px auto;
     text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 810px) {
     .Wrapper {
-        width: 90%;
-        margin: 30px auto;
+        width: 100%;
+        margin: 40px auto;
         padding: 0px;
     }
 }
@@ -30,27 +28,17 @@ Body {
 /*Logo*/
 
 .Logo {
-    background: url(Smugness.png) center center no-repeat;
+    background: url(avatar.jpg) center center no-repeat;
     background-size: contain;
-    margin: 40px auto;
-    margin-bottom: 2rem;
+    margin: 0 auto;
     width: 200px;
-    height: 208px;
-    animation: Logo .666s infinite alternate;
-    image-rendering: pixelated;
+    height: 200px;
+    border-radius: 16px;
+    border: #60727F 2px solid;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.10);
 }
 
-@keyframes Logo {
-    0% {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-        -moz-transform: translate(0px, 0px);
-    }
-
-    100% {
-        -webkit-transform: translate3d(0px, -10px, 0px);
-        -moz-transform: translate(0px, -10px);
-    }
-}
+/*Header*/
 
 header#Section {
     padding: 8px 10px;
@@ -59,11 +47,9 @@ header#Section {
 
 h3#Title {
     font-size: 72px;
-    font-style: italic;
-    margin-top: 0;
-    margin-bottom: 0px;
-    font-weight: 700;
-    letter-spacing: 4px;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 h3#HeadText {
@@ -78,69 +64,82 @@ h3#HeadText {
     flex-direction: column;
 }
 
-span#Sexuality {
-    margin-bottom: 8px;
+span#About {
+    font-size: 22px;
+    margin-bottom: 4px;
 }
 
 /*Footer*/
 
 Footer {
-    margin-top: 30px;
+    padding: 40px 0;
+    padding-bottom: 0;
     letter-spacing: 6px;
-    font-style: italic;
 }
 
 /*Buttons*/
 
 .Button {
-    background-color: #9258B1;
-    border: 2px solid black;
+    background-color: #2F383F;
+    border: #60727F 2px solid;
+    border-radius: 4px;
+    color: #F2F2F2;
     font-size: 22px;
     font-weight: 600;
-    display: inline-block;
-    width: 150px;
-    transition: linear;
-    transition-property: transform, box-shadow;
-    transition-duration: 30ms;
-    color: white;
-    line-height: 38px;
+    line-height: 40px;
     text-decoration: none;
-    margin-top: 20px;
-    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.30);
+    display: inline-block;
+    width: 155px;
+    margin-top: 15px;
+    transition: transform 0.25s cubic-bezier(0.5, 0, 0.25, 2), box-shadow 0.25s;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.20);
 }
 
 .Button:hover {
     transform: translate(0,-4px);
-    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.30);
 }
 
 .Button:active {
-    transform: translateY(0px);
-    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.30);
+    transform: translate(0,-4px);
 }
 
 /*Article*/
 
 article {
-    background-color: white;
-    border: 2px solid black;
-    margin: 35px auto;
+    background-color: #2F383F;
+    border: 2px solid #60727F;
+    border-radius: 16px;
+    margin: 20px auto;
     margin-bottom: 0px;
-    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.30);
     width: 70%;
-    transition: linear;
-    transition-property: transform, box-shadow;
-    transition-duration: 30ms;
+    overflow: hidden;
+    transition: transform 0.25s cubic-bezier(0.5, 0, 0.25, 2);
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.20);
 }
 
 article:hover {
     transform: translate(0,-4px);
-    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.30);
 }
 
-article:active {
-    transform: translateY(0px);
-    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.30);
+@media (max-width: 810px) {
+    article {
+        border-radius: 0px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        width: 100%;
+    }
+}
+
+article a {
+    color: #F2F2F2 !important;
+    text-decoration: none !important;
+}
+
+header#Titlebar {
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .Screenshot {
@@ -148,4 +147,3 @@ article:active {
     height: auto;
     display: block;
 }
-
