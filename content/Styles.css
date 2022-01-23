@@ -34,7 +34,7 @@ Body {
 /*Logo*/
 
 .Logo {
-    background: url(Mac200.jpg) center center no-repeat;
+    background: url('https://github.com/Coniferr/coniferr.github.io/blob/main/content/Mac200.jpg') center center no-repeat;
     background-size: 100%;
     margin: 0 auto;
     width: 200px;
@@ -45,7 +45,7 @@ Body {
 
 .Banner {
     border-bottom: 1px solid #161616;
-    background: url(Mac1440.jpg) center center no-repeat;
+    background: url('https://github.com/Coniferr/coniferr.github.io/blob/main/content/Mac1440.jpg') center center no-repeat;
     background-size: 150%;
     height: 350px;
     width: 100%;
