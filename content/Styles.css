@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600;800&display=swap');
+
+/*Body*/
+
+Body, HTML {
+    height: 100%;
+}
+
+Body {
+    background-color: #242424;
+    margin: 0;
+    color: #FFF;
+    font-family: 'Segoe UI', Arial, Helvetica, Verdana, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.Wrapper {
+    width: 40%;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+    top: 15em;
+}
+
+@media (max-width: 810px) {
+    .Wrapper {
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px;
+        top: 5em;
+    }
+}
+
+/*Logo*/
+
+.Logo {
+    background: url(Mac200.jpg) center center no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 8px solid #242424;
+    border-radius: 50%;
+}
+
+.Banner {
+    border-bottom: 1px solid #161616;
+    background: url(Mac1440.jpg) center center no-repeat;
+    background-size: 150%;
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+@media (max-width: 810px) {
+    .Banner {
+        height: 200px;
+    }
+}
+
+/*Header*/
+
+header#Section {
+    padding: 8px 10px;
+    margin: 35px auto;
+}
+
+h3#Title {
+    font-size: 72px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3#HeadText {
+    font-size: 42px;
+    margin: 0px;
+}
+
+.Flags {
+    color: #7a7a7a;
+    font-size: 22px;
+    display: inline-block;
+    margin-bottom: 8px;
+    line-height: 0px;
+    position: relative;
+}
+
+.Trans {
+    vertical-align: -0.3em;
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+}
+
+/*About*/
+
+.AboutMe {
+    display: flex;
+    flex-direction: column;
+}
+
+span#About {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+/*Buttons*/
+
+.Button {
+    background-color: #0000;
+    border: #424242 2px solid;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 42px;
+    text-decoration: none;
+    display: inline-block;
+    width: 145px;
+    margin-top: 10px;
+    transition: transform 0.25s cubic-bezier(0.5, 0, 0.25, 3), background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.Button:hover {
+    background-color: #42424250;
+    transform: translate(0,-4px);
+}
+
+.Button:active {
+    background-color: #42424250;
+    transform: translate(0,-4px);
+}
+
+.Brand {
+    border-color: #4979ff80;
+}
+
+.Brand:hover {
+    background-color: #4979ff2d;
+    color: #4979ff;
+}
+
+.Brand:active {
+    background-color: #4979ff2d;
+    color: #4979ff;
+}
+
+/*Footer*/
+
+Footer {
+    background-color: #212121;
+    border-top: 1px solid #161616;
+    font-weight: 700;
+    font-size: 18px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    position: fixed;
+    bottom: 0%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-height: 810px) {
+    Footer {
+        display: none;
+    }
+}
