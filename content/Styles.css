@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600;800&display=swap');
 
 /*Body*/
 
@@ -7,10 +6,12 @@ Body, HTML {
 }
 
 Body {
-    background-color: #242424;
     margin: 0;
+    background-color: #323232;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    line-height: 1;
     color: #FFF;
-    font-family: 'Segoe UI', Arial, Helvetica, Verdana, sans-serif;
     text-rendering: optimizeLegibility;
 }
 
@@ -31,21 +32,35 @@ Body {
     }
 }
 
+::Selection {
+    background-color: #FF282F;
+    color: #FFF;
+}
+
 /*Logo*/
 
 .Logo {
-    background: url(Mac200.jpg) center center no-repeat;
+    background: url(Horse.png) center center no-repeat;
     background-size: 100%;
     margin: 0 auto;
+    margin-bottom: 16px;
     width: 200px;
     height: 200px;
-    border: 8px solid #242424;
-    border-radius: 50%;
+    border: 7px solid #323232;
+    border-radius: 10%;
+    transition: transform 0.25s cubic-bezier(0.5, 0, 0.25, 3);
+}
+
+.Logo:hover {
+    transform: scale(110%);
+}
+
+.Logo:active {
+    transform: scale(110%);
 }
 
 .Banner {
-    border-bottom: 1px solid #161616;
-    background: url(Mac1440.jpg) center center no-repeat;
+    background-color: #FF282F;
     background-size: 150%;
     height: 350px;
     width: 100%;
@@ -59,6 +74,16 @@ Body {
     }
 }
 
+.Banner::before {
+    box-shadow: inset 0 -2px 4px 0 #0002;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
 /*Header*/
 
 header#Section {
@@ -67,7 +92,7 @@ header#Section {
 }
 
 h3#Title {
-    font-size: 72px;
+    font-size: 62px;
     font-weight: 700;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -79,9 +104,10 @@ h3#HeadText {
 }
 
 .Flags {
-    color: #7a7a7a;
+    color: #898989;
     font-size: 22px;
     display: inline-block;
+    margin-top: 4px;
     margin-bottom: 8px;
     line-height: 0px;
     position: relative;
@@ -102,69 +128,76 @@ h3#HeadText {
 }
 
 span#About {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 /*Buttons*/
 
 .Button {
     background-color: #0000;
-    border: #424242 2px solid;
-    border-radius: 5px;
+    border: #707070 2px solid;
+    border-radius: 800px;
     color: #FFF;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 42px;
+    line-height: 25px;
     text-decoration: none;
     display: inline-block;
-    width: 145px;
     margin-top: 10px;
-    transition: transform 0.25s cubic-bezier(0.5, 0, 0.25, 3), background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 6px 16px;
+    min-width: 105px;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.25s ease-in-out;
 }
 
 .Button:hover {
-    background-color: #42424250;
-    transform: translate(0,-4px);
+    border-color: #808080;
+    background-color: #FFF1;
 }
 
 .Button:active {
-    background-color: #42424250;
-    transform: translate(0,-4px);
+    border-color: #808080;
+    background-color: #FFF1;
 }
 
 .Brand {
-    border-color: #4979ff80;
+    border-color: #FF282F;
+    color: #FF282F;
 }
 
 .Brand:hover {
-    background-color: #4979ff2d;
-    color: #4979ff;
+    border-color: #FF282F;
+    background-color: #FF282F33;
 }
 
 .Brand:active {
-    background-color: #4979ff2d;
-    color: #4979ff;
+    border-color: #FF282F;
+    background-color: #FF282F33;
 }
 
-/*Footer*/
+/*404*/
 
-Footer {
-    background-color: #212121;
-    border-top: 1px solid #161616;
-    font-weight: 700;
-    font-size: 18px;
-    width: 100%;
-    height: 120px;
+.ErrorPage {
+    background: url(https://cdn.discordapp.com/attachments/826952984696717364/904969871358570526/ezgif-3-3c3629b9fff3.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Error {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
     display: flex;
-    position: fixed;
-    bottom: 0%;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    text-shadow: 0 2px 0 #000;
 }
 
-@media (max-height: 810px) {
-    Footer {
-        display: none;
-    }
+.Big {
+    font-size: 15em;
+    font-weight: 700;
 }
