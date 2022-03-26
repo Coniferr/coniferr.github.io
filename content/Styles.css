@@ -33,7 +33,7 @@ Body {
 }
 
 ::Selection {
-    background-color: #FF282F;
+    background-color: #BF1931;
     color: #FFF;
 }
 
@@ -48,7 +48,7 @@ Body {
     height: 200px;
     border: 7px solid #323232;
     border-radius: 10%;
-    transition: transform 0.25s cubic-bezier(0.5, 0, 0.25, 3);
+    transition: transform 0.15s ease-in-out;
 }
 
 .Logo:hover {
@@ -60,7 +60,7 @@ Body {
 }
 
 .Banner {
-    background-color: #FF282F;
+    background-color: #BF1931;
     background-size: 150%;
     height: 350px;
     width: 100%;
@@ -151,7 +151,7 @@ span#About {
     margin-right: 4px;
     padding: 6px 16px;
     min-width: 105px;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.25s ease-in-out;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.25s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .Button:hover {
@@ -162,21 +162,23 @@ span#About {
 .Button:active {
     border-color: #808080;
     background-color: #FFF1;
+    box-shadow: 0 0 0 2px #323232,0 0 0 4px #808080;
 }
 
 .Brand {
-    border-color: #FF282F;
-    color: #FF282F;
+    border-color: #BF1931;
+    color: #BF1931;
 }
 
 .Brand:hover {
-    border-color: #FF282F;
-    background-color: #FF282F33;
+    border-color: #BF1931;
+    background-color: #BF193133;
 }
 
 .Brand:active {
-    border-color: #FF282F;
-    background-color: #FF282F33;
+    border-color: #BF1931;
+    background-color: #BF193133;
+    box-shadow: 0 0 0 2px #323232,0 0 0 4px #BF1931;
 }
 
 /*404*/
