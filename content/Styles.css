@@ -1,10 +1,6 @@
 
 /*Body*/
 
-Body, HTML {
-    height: 100%;
-}
-
 Body {
     margin: 0;
     background-color: #323232;
@@ -13,6 +9,7 @@ Body {
     line-height: 1;
     color: #FFF;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
 }
 
 .Wrapper {
@@ -162,7 +159,6 @@ span#About {
 .Button:active {
     border-color: #808080;
     background-color: #FFF1;
-    box-shadow: 0 0 0 2px #323232,0 0 0 4px #808080;
 }
 
 .Brand {
@@ -178,28 +174,57 @@ span#About {
 .Brand:active {
     border-color: #BF1931;
     background-color: #BF193133;
-    box-shadow: 0 0 0 2px #323232,0 0 0 4px #BF1931;
 }
 
-/*404*/
+/*Nav*/
 
-.ErrorPage {
-    background: url(https://cdn.discordapp.com/attachments/826952984696717364/904969871358570526/ezgif-3-3c3629b9fff3.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.Error {
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
+header#Nav {
+    background-color: #323232;
+    box-shadow: 0 2px 4px 0 #0002;
+    height: 55px;
+    padding-left: 16px;
+    padding-right: 16px;
     display: flex;
-    flex-direction: column;
-    text-shadow: 0 2px 0 #000;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 22;
 }
 
-.Big {
-    font-size: 15em;
+.NavLink {
+    color: #FFF;
+    font-size: 20px;
     font-weight: 700;
+    text-decoration: none;
+}
+
+.NavButton {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/*Dsplay*/
+
+.DisplayImg {
+    margin: 0 auto;
+    margin-bottom: 16px;
+    border: 7px solid #323232;
+    border-radius: 16px;
+    width: 100%;
+}
+
+@media (max-width: 810px) {
+    .DisplayImg {
+        border-radius: 0px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+    }
 }
