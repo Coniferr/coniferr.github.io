@@ -211,6 +211,15 @@ header#Nav {
     margin-right: 8px;
 }
 
+.NavButton:hover {
+    color: #BF1931;
+}
+
+.NavButton:active {
+    color: #BF1931;
+}
+
+
 /*Dsplay*/
 
 .DisplayImg {
