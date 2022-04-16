@@ -30,7 +30,7 @@ Body {
 }
 
 ::Selection {
-    background-color: #BF1931;
+    background-color: #F2AD85;
     color: #FFF;
 }
 
@@ -57,7 +57,8 @@ Body {
 }
 
 .Banner {
-    background-color: #BF1931;
+    background-color: #FE976B;
+    background-image: url(Banner.jpg);
     background-size: 150%;
     height: 350px;
     width: 100%;
@@ -162,18 +163,18 @@ span#About {
 }
 
 .Brand {
-    border-color: #BF1931;
-    color: #BF1931;
+    border-color: #F2AD85;
+    color: #F2AD85;
 }
 
 .Brand:hover {
-    border-color: #BF1931;
-    background-color: #BF193133;
+    border-color: #F2AD85;
+    background-color: #F2AD8533;
 }
 
 .Brand:active {
-    border-color: #BF1931;
-    background-color: #BF193133;
+    border-color: #F2AD85;
+    background-color: #F2AD8533;
 }
 
 /*Nav*/
@@ -198,27 +199,6 @@ header#Nav {
     font-weight: 700;
     text-decoration: none;
 }
-
-.NavButton {
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 12px;
-    margin-left: 8px;
-    margin-right: 8px;
-}
-
-.NavButton:hover {
-    color: #BF1931;
-}
-
-.NavButton:active {
-    color: #BF1931;
-}
-
 
 /*Dsplay*/
 
