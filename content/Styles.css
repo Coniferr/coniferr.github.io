@@ -58,7 +58,7 @@ Body {
 
 .Banner {
     background-color: #FE976B;
-    background-image: url(Banner.jpg);
+    background-image: url(Banner.png);
     background-size: 150%;
     height: 350px;
     width: 100%;
@@ -147,6 +147,28 @@ span#About {
 
 /*Buttons*/
 
+.Social {
+    text-decoration: none;
+    margin-top: 18px;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    transition: transform 0.15s ease-in-out;
+}
+
+.Social img {
+    display: inline-block;
+    width: 100%;
+}
+
+.Social:hover,
+.Social:active {
+    transform: scale(120%);
+    filter: hue-rotate(90deg);
+}
+
 .Button {
     background-color: #0000;
     border: #707070 2px solid;
@@ -165,11 +187,7 @@ span#About {
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.25s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.Button:hover {
-    border-color: #808080;
-    background-color: #FFF1;
-}
-
+.Button:hover,
 .Button:active {
     border-color: #808080;
     background-color: #FFF1;
@@ -180,11 +198,7 @@ span#About {
     color: #F2AD85;
 }
 
-.Brand:hover {
-    border-color: #F2AD85;
-    background-color: #F2AD8533;
-}
-
+.Brand:hover, 
 .Brand:active {
     border-color: #F2AD85;
     background-color: #F2AD8533;
