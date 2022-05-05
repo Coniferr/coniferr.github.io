@@ -125,6 +125,12 @@ h3#HeadText {
     line-height: 1em;
 }
 
+span#Sub {
+    display: block;
+    color: #898989;
+    margin-top: 12px;
+}
+
 /*About*/
 
 .AboutMe {
