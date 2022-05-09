@@ -131,6 +131,12 @@ span#Sub {
     margin-top: 12px;
 }
 
+a#Sub {
+    display: block;
+    color: #898989;
+    margin-top: 12px;
+}
+
 /*About*/
 
 .AboutMe {
@@ -228,6 +234,12 @@ header#Nav {
     font-weight: 400;
     text-decoration: none;
     text-shadow: 0 2px 4px #0008;
+}
+
+.NavLink img {
+    vertical-align: -0.2em;
+    margin-right: 2px;
+    filter: drop-shadow(0 2px 4px #0008);
 }
 
 /*Dsplay*/
