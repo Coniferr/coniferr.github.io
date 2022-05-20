@@ -125,17 +125,13 @@ h3#HeadText {
     line-height: 1em;
 }
 
-span#Sub {
-    display: block;
-    color: #898989;
-    margin-top: 12px;
-}
-
+span#Sub,
 a#Sub {
     display: block;
     color: #898989;
     margin-top: 12px;
 }
+
 
 /*About*/
 
@@ -172,7 +168,6 @@ span#About {
 .Social:hover,
 .Social:active {
     transform: scale(120%);
-    filter: hue-rotate(90deg);
 }
 
 .Button {
