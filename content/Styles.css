@@ -34,6 +34,16 @@ Body {
     color: #FFF;
 }
 
+a {
+    color: #F2AD85;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
 /*Logo*/
 
 .Logo {
@@ -192,6 +202,7 @@ span#About {
 .Button:active {
     border-color: #808080;
     background-color: #FFF1;
+    text-decoration: none;
 }
 
 .Brand {
