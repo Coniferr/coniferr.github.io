@@ -1,12 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
 /*Body*/
 
 Body {
     margin: 0;
     background-color: #323232;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     line-height: 1;
     color: #FFF;
@@ -32,12 +30,12 @@ Body {
 }
 
 ::Selection {
-    background-color: #2A74FE;
+    background-color: #4DADFF;
     color: #FFF;
 }
 
 a {
-    color: #2A74FE;
+    color: #4DADFF;
     text-decoration: none;
 }
 
@@ -66,11 +64,8 @@ a:active {
 }
 
 .Banner {
-    background-color: #2A74FE;
-    /*
-    background-image: url(Header.png);
-    */
-    background-size: 150%;
+    background-color: #4DADFF;
+    background-size: 100%;
     height: 350px;
     width: 100%;
     position: absolute;
@@ -183,9 +178,9 @@ span#About {
 
 .Button {
     background-color: #0000;
-    border: #2A74FE 2px solid;
+    border: #4DADFF 2px solid;
     border-radius: 800px;
-    color: #2A74FE;
+    color: #4DADFF;
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
@@ -201,8 +196,8 @@ span#About {
 
 .Button:hover,
 .Button:active {
-    border-color: #2A74FE;
-    background-color: #2A74FE33;
+    border-color: #4DADFF;
+    background-color: #4DADFF33;
     text-decoration: none;
 }
 
