@@ -32,6 +32,10 @@ Body {
     }
 }
 
+.ChartWrapper {
+    top: 5em;
+}
+
 ::Selection {
     background-color: #4DADFF;
     color: #FFF;
@@ -236,6 +240,7 @@ header#Nav {
 .DisplayImg {
     margin: 0 auto;
     margin-bottom: 16px;
+    background-color: #323232;
     border: 7px solid #323232;
     border-radius: 20px;
     width: 100%;
@@ -247,4 +252,9 @@ header#Nav {
         border-left-width: 0px;
         border-right-width: 0px;
     }
+}
+
+.ChartImg {
+    background-color: transparent;
+    border-width: 0px;
 }
