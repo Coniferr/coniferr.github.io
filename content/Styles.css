@@ -233,7 +233,8 @@ h3#Title {
         border-radius: 0;
         border-top: 2px solid var(--Background-Float);
         background-color: var(--Background);
-        height: calc(70px + env(safe-area-inset-bottom));
+        height: 70px;
+        padding-bottom: env(safe-area-inset-bottom);
         width: 100%;
         bottom: 0;
     }
