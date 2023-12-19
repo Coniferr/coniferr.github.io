@@ -1,18 +1,43 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
+@media (prefers-color-scheme: dark) {
+    :root {
+        --Accent: #ef5eba;
+        --Accent-Trans: #ef5eba50;
+        --Accent-Float: #ef5eba30;
+        --Background: #2F2F2F;
+        --Background-Float: #424242;
+        --Background-Nav: #202020;
+        --Text: #FFFFFF;
+        --Text-Float: #BEBEBE;
+    }
+}
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --Accent: #d5108c;
+        --Accent-Trans: #d5108c50;
+        --Accent-Float: #d5108c30;
+        --Background: #F6F6F6;
+        --Background-Float: #E3E3E3;
+        --Background-Nav: #F6F6F6;
+        --Text: #2F2F2F;
+        --Text-Float: #626262;
+    }
+}
 
 /*Body*/
 
 Body {
     margin: 0;
     padding: 0;
-    background-color: #2F2F2F;
+    background-color: var(--Background);
     text-rendering: optimizeLegibility;
     font-family: 'Inter', sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1;
     font-weight: 400;
     font-size: 20px;
-    color: #FFF;
+    color: var(--Text);
 }
 
 .Wrapper {
@@ -37,28 +62,32 @@ Body {
 /* Link */
 
 a {
-    color: #FF9800;
+    color: var(--Accent);
     text-decoration: underline 2px;
-    text-decoration-color: #FF980055;
+    text-decoration-color: var(--Accent-Trans);
     transition: text-decoration-color 0.2s ease-in-out;
 }
 
 a:hover,
 a:active {
-    text-decoration-color: #FF9800;
+    text-decoration-color: var(--Accent);
 }
 
 /*Logo*/
 
 .Logo {
-    background: #2F2F2F url(Avatar.png) center center no-repeat;
+    background: var(--Background) url(Icon.png) center center no-repeat;
     background-size: 100%;
     margin: 0 auto;
     margin-bottom: 12px;
     width: 200px;
     height: 200px;
-    border: 8px solid #2F2F2F;
+    border: 8px solid var(--Background);
     border-radius: 50%;
+}
+
+.Logo:hover, .Logo:active {
+    background-image: url(Icon2.png);
 }
 
 @media (max-width: 1200px) {
@@ -73,7 +102,7 @@ a:active {
 
 .Banner {
     box-sizing: border-box;
-    background: #573B25;
+    background: var(--Accent-Float);
     height: 330px;
     width: 100%;
     position: absolute;
@@ -126,8 +155,8 @@ h3#Title {
 }
 
 .Pill {
-    color: #BEBEBE;
-    background: #424242;
+    color: var(--Text-Float);
+    background: var(--Background-Float);
     border-radius: 999px; 
     display: inline-flex;
     align-items: center;
@@ -164,7 +193,7 @@ h3#Title {
 }
 
 .Pill#PC > span:last-child {
-    color: #EEE;
+    color: var(--Text);
 }
 
 /* About Text */
@@ -183,7 +212,7 @@ h3#Title {
 
 .Navigation {
     border-radius: 24px;
-    background-color: #202020;
+    background-color: var(--Background-Nav);
     position: fixed;
     left: 0;
     right: 0;
@@ -202,7 +231,9 @@ h3#Title {
 @media (max-width: 1200px) {
     .Navigation {
         border-radius: 0;
-        height: 70px;
+        border-top: 2px solid var(--Background-Float);
+        background-color: var(--Background);
+        height: calc(70px + env(safe-area-inset-bottom));
         width: 100%;
         bottom: 0;
     }
@@ -212,7 +243,7 @@ h3#Title {
     gap: 12px;
     height: 100%;
     width: 100%;
-    color: #FFF;
+    color: var(--Text);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,8 +256,13 @@ h3#Title {
     .Navigation-Link {
         gap: 3px;
         min-width: auto;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
+    }
+}
+
+@media (max-width: 700px) {
+    .Navigation-Link {
         flex-direction: column;
     }
 }
@@ -234,7 +270,7 @@ h3#Title {
 .Navigation svg {
     width: 32px;
     height: 32px;
-    fill: #FF9800;
+    fill: var(--Accent);
 }
 
 /* Divider */
@@ -242,7 +278,7 @@ h3#Title {
 hr {
     height: 2px;
     width: 90%;
-    background-color: #424242;
+    background-color: var(--Background-Float);
     border: none;
 }
 
@@ -255,6 +291,7 @@ footer {
 footer > div {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 h3#Subtitle {
@@ -267,8 +304,8 @@ h3#Subtitle {
 
 .Footer-Link {
     border-radius: 999px;
-    height: 46px;
-    min-width: 160px;
+    height: 42px;
+    min-width: 180px;
     margin: 0 6px;
     gap: 12px;
     display: flex;
@@ -278,6 +315,14 @@ h3#Subtitle {
     transition: background-color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out;;
 }
 
-.Footer-Link:hover, .Footer-Link:active {
-    background-color: #FF980020;
+@media (max-width: 1200px) {
+    .Footer-Link {
+        margin-bottom: 6px;
+    }
+}
+
+.Footer-Link svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--Accent);
 }
